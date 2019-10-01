@@ -18,7 +18,6 @@ public class ShareActivity extends AppCompatActivity {
         setContentView(R.layout.activity_share);
         mEditTextShare = findViewById(R.id.edit_Text_share);
         mQuestionText = getIntent().getStringExtra("question text extra");
-
         SharedPreferences sharedPreferences = getSharedPreferences("app_pref", MODE_PRIVATE);
         String questionTitle = sharedPreferences.getString("share_title","");
         mEditTextShare.setText(questionTitle);

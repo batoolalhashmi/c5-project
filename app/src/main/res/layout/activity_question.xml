@@ -91,7 +91,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:background="@drawable/button_true"
+        android:background="@android:color/background_dark"
+        android:onClick="onTrueClicked"
         android:text="@string/true_text"
         android:textColor="@android:color/white"
         android:textSize="18sp"
@@ -99,15 +100,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_false"
-        android:onClick="onTrueClicked"/>
+        app:layout_constraintStart_toEndOf="@+id/button_false" />
 
     <Button
         android:id="@+id/button_false"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:background="@drawable/button_false"
+        android:background="@drawable/pressed_purple"
+        android:onClick="onFalseClicked"
         android:text="@string/false_text"
         android:textColor="@android:color/white"
         android:textSize="18sp"
@@ -115,7 +116,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_true"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        android:onClick="onFalseClicked"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
